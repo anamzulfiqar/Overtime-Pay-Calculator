@@ -1,0 +1,12 @@
+total_hours = 8
+hourly_rate = 100
+extra_rate =100*1.5
+person_working_hours = int(input("enter no of hours you work:"))
+print(person_working_hours*hourly_rate)
+
+if person_working_hours> 8:
+  first_8hours = total_hours*hourly_rate
+  overtime_hours= person_working_hours-total_hours
+  print("overtime hours",overtime_hours)
+  overtime_hours= overtime_hours*extra_rate
+  print("total pay",overtime_hours+first_8hours)
